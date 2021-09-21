@@ -1,12 +1,16 @@
 import './Calendar.css';
+import Header from './Header';
 import Month from './Month';
 
-function Calendar() {
+function Calendar(props) {
   return (
-    <div className="Calendar">
-      <header className="Calendar-header">
-        <Month month=Date.prototype.getMonth() />
-      </header>
+    <div className="container">
+      <Header
+        currentDate={props.currentDate}
+      />
+      <Month
+        currentDate={props.currentDate}
+      />
     </div>
   );
 }
