@@ -14,14 +14,9 @@ require('bootstrap');
   crossorigin="anonymous"
 />
 
-const currentDate = new Date(Date.now());
-{ /*Debug logging*/ console.log(currentDate) }
-
 ReactDOM.render(
   <React.StrictMode>
-	<Calendar 
-	  currentDate={currentDate}
-	/>
+	<Calendar />
   </React.StrictMode>,
   document.getElementById('root')
 );
