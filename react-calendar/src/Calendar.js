@@ -50,8 +50,4 @@ class Calendar extends React.Component {
   }
 }
 
-function addReminder(reminder) {
-  //Adding reminder
-}
-
 export default Calendar;
